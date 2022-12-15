@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atom Table</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <style>
+* {
+padding: 0;
+}
+
+tr th, td {
+text-align: center;
+}
+    </style>
+</head>
+<body>
+    <table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>DisplayName</th>
+                <th>Family</th>
+                <th>FunctionTypes</th>
+                <th>NotesExist</th>
+                <th>OtherNames</th>
+                <th>RelPath</th>
+                <th>Role</th>
+                <th>LatestVersion</th>
+                <th>LatestVersionPath</th>
+                <th>LatestVersionRevDate</th>
+                <th>H(1)</th>
+                <th>He(2)</th>
+                <th>Li(3)</th>
+                <th>Be(4)</th>
+                <th>B(5)</th>
+                <th>C(6)</th>
+                <th>N(7)</th>
+                <th>O(8)</th>
+                <th>F(9)</th>
+                <th>Ne(10)</th>
+                <th>Na(11)</th>
+                <th>Mg(12)</th>
+                <th>Al(13)</th>
+                <th>Si(14)</th>
+                <th>P(15)</th>
+                <th>S(16)</th>
+                <th>Cl(17)</th>
+                <th>Ar(18)</th>
+                <th>K(19)</th>
+                <th>Ca(20)</th>
+                <th>Sc(21)</th>
+                <th>Ti(22)</th>
+                <th>V(23)</th>
+                <th>Cr(24)</th>
+                <th>Mn(25)</th>
+                <th>Fe(26)</th>
+                <th>Co(27)</th>
+                <th>Ni(28)</th>
+                <th>Cu(29)</th>
+                <th>Zn(30)</th>
+                <th>Ga(31)</th>
+                <th>Ge(32)</th>
+                <th>As(33)</th>
+                <th>Se(34)</th>
+                <th>Br(35)</th>
+                <th>Kr(36)</th>
+                <th>Rb(37)</th>
+                <th>Sr(38)</th>
+                <th>Y(39)</th>
+                <th>Zr(40)</th>
+                <th>Nb(41)</th>
+                <th>Mo(42)</th>
+                <th>Tc(43)</th>
+                <th>Ru(44)</th>
+                <th>Rh(45)</th>
+                <th>Pd(46)</th>
+                <th>Ag(47)</th>
+                <th>Cd(48)</th>
+                <th>In(49)</th>
+                <th>Sn(50)</th>
+                <th>Sb(51)</th>
+                <th>Te(52)</th>
+                <th>I(53)</th>
+                <th>Xe(54)</th>
+                <th>Cs(55)</th>
+                <th>Ba(56)</th>
+                <th>La(57)</th>
+                <th>Ce(58)</th>
+                <th>Pr(59)</th>
+                <th>Nd(60)</th>
+                <th>Pm(61)</th>
+                <th>Sm(62)</th>
+                <th>Eu(63)</th>
+                <th>Gd(64)</th>
+                <th>Tb(65)</th>
+                <th>Dy(66)</th>
+                <th>Ho(67)</th>
+                <th>Er(68)</th>
+                <th>Tm(69)</th>
+                <th>Yb(70)</th>
+                <th>Lu(71)</th>
+                <th>Hf(72)</th>
+                <th>Ta(73)</th>
+                <th>W(74)</th>
+                <th>Re(75)</th>
+                <th>Os(76)</th>
+                <th>Ir(77)</th>
+                <th>Pt(78)</th>
+                <th>Au(79)</th>
+                <th>Hg(80)</th>
+                <th>Tl(81)</th>
+                <th>Pb(82)</th>
+                <th>Bi(83)</th>
+                <th>Po(84)</th>
+                <th>At(85)</th>
+                <th>Rn(86)</th>
+                <th>Fr(87)</th>
+                <th>Ra(88)</th>
+                <th>Ac(89)</th>
+                <th>Th(90)</th>
+                <th>Pa(91)</th>
+                <th>U(92)</th>
+                <th>Np(93)</th>
+                <th>Pu(94)</th>
+                <th>Am(95)</th>
+                <th>Cm(96)</th>
+                <th>Bk(97)</th>
+                <th>Cf(98)</th>
+                <th>Es(99)</th>
+                <th>Fm(100)</th>
+                <th>Md(101)</th>
+                <th>No(102)</th>
+                <th>Lr(103)</th>
+                <th>Rf(104)</th>
+                <th>Ha(105)</th>
+                <th>Sg(106)</th>
+                <th>Ns(107)</th>
+                <th>Hs(108)</th>
+                <th>Mt(109)</th>
+                <th>Unn(110)</th>
+                <th>Unu(111)</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>DisplayName</th>
+                <th>Family</th>
+                <th>FunctionTypes</th>
+                <th>NotesExist</th>
+                <th>OtherNames</th>
+                <th>RelPath</th>
+                <th>Role</th>
+                <th>LatestVersion</th>
+                <th>LatestVersionPath</th>
+                <th>LatestVersionRevDate</th>
+                <th>H(1)</th>
+                <th>He(2)</th>
+                <th>Li(3)</th>
+                <th>Be(4)</th>
+                <th>B(5)</th>
+                <th>C(6)</th>
+                <th>N(7)</th>
+                <th>O(8)</th>
+                <th>F(9)</th>
+                <th>Ne(10)</th>
+                <th>Na(11)</th>
+                <th>Mg(12)</th>
+                <th>Al(13)</th>
+                <th>Si(14)</th>
+                <th>P(15)</th>
+                <th>S(16)</th>
+                <th>Cl(17)</th>
+                <th>Ar(18)</th>
+                <th>K(19)</th>
+                <th>Ca(20)</th>
+                <th>Sc(21)</th>
+                <th>Ti(22)</th>
+                <th>V(23)</th>
+                <th>Cr(24)</th>
+                <th>Mn(25)</th>
+                <th>Fe(26)</th>
+                <th>Co(27)</th>
+                <th>Ni(28)</th>
+                <th>Cu(29)</th>
+                <th>Zn(30)</th>
+                <th>Ga(31)</th>
+                <th>Ge(32)</th>
+                <th>As(33)</th>
+                <th>Se(34)</th>
+                <th>Br(35)</th>
+                <th>Kr(36)</th>
+                <th>Rb(37)</th>
+                <th>Sr(38)</th>
+                <th>Y(39)</th>
+                <th>Zr(40)</th>
+                <th>Nb(41)</th>
+                <th>Mo(42)</th>
+                <th>Tc(43)</th>
+                <th>Ru(44)</th>
+                <th>Rh(45)</th>
+                <th>Pd(46)</th>
+                <th>Ag(47)</th>
+                <th>Cd(48)</th>
+                <th>In(49)</th>
+                <th>Sn(50)</th>
+                <th>Sb(51)</th>
+                <th>Te(52)</th>
+                <th>I(53)</th>
+                <th>Xe(54)</th>
+                <th>Cs(55)</th>
+                <th>Ba(56)</th>
+                <th>La(57)</th>
+                <th>Ce(58)</th>
+                <th>Pr(59)</th>
+                <th>Nd(60)</th>
+                <th>Pm(61)</th>
+                <th>Sm(62)</th>
+                <th>Eu(63)</th>
+                <th>Gd(64)</th>
+                <th>Tb(65)</th>
+                <th>Dy(66)</th>
+                <th>Ho(67)</th>
+                <th>Er(68)</th>
+                <th>Tm(69)</th>
+                <th>Yb(70)</th>
+                <th>Lu(71)</th>
+                <th>Hf(72)</th>
+                <th>Ta(73)</th>
+                <th>W(74)</th>
+                <th>Re(75)</th>
+                <th>Os(76)</th>
+                <th>Ir(77)</th>
+                <th>Pt(78)</th>
+                <th>Au(79)</th>
+                <th>Hg(80)</th>
+                <th>Tl(81)</th>
+                <th>Pb(82)</th>
+                <th>Bi(83)</th>
+                <th>Po(84)</th>
+                <th>At(85)</th>
+                <th>Rn(86)</th>
+                <th>Fr(87)</th>
+                <th>Ra(88)</th>
+                <th>Ac(89)</th>
+                <th>Th(90)</th>
+                <th>Pa(91)</th>
+                <th>U(92)</th>
+                <th>Np(93)</th>
+                <th>Pu(94)</th>
+                <th>Am(95)</th>
+                <th>Cm(96)</th>
+                <th>Bk(97)</th>
+                <th>Cf(98)</th>
+                <th>Es(99)</th>
+                <th>Fm(100)</th>
+                <th>Md(101)</th>
+                <th>No(102)</th>
+                <th>Lr(103)</th>
+                <th>Rf(104)</th>
+                <th>Ha(105)</th>
+                <th>Sg(106)</th>
+                <th>Ns(107)</th>
+                <th>Hs(108)</th>
+                <th>Mt(109)</th>
+                <th>Unn(110)</th>
+                <th>Unu(111)</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Begin import datatable javascript assets  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <!-- End import datatable javascript assets -->
+
+    <!-- Begin import custom javascript library   -->
+    <script>
+    
+   $(function(){
+
+   $.ajax({
+      url: "https://cors-anywhere.herokuapp.com/https://www.basissetexchange.org/api/metadata/",
+      async: false,
+      success: function(result){
+         console.log(result);
+         drawDataTable(result);
+      }
+      //redirection via cors-anywhere.herokuapp.com so that we can do cross-origin requests: This API enables cross-origin requests to anywhere.
+   });
+
+   function drawDataTable(data) {
+      if (data !== null) {
+         data = Object.values(data);
+         console.log("$$$$$$$", data);
+         let functionTypeStr = "";
+         let notesExistStr = "";
+         let otherNamesStr = "";
+         let arrayItem = [];
+
+         // Element Key Array
+         let elementKeyArray = [ "H(1)",	"He(2)", "Li(3)", "Be(4)", "B(5)", "C(6)", "N(7)", "O(8)", "F(9)", "Ne(10)", "Na(11)", "Mg(12)", "Al(13)", "Si(14)", "P(15)", "S(16)", "Cl(17)", "Ar(18)", "K(19)", "Ca(20)", "Sc(21)", "Ti(22)", "V(23)", "Cr(24)", "Mn(25)", "Fe(26)", "Co(27)", "Ni(28)", "Cu(29)", "Zn(30)", "Ga(31)", "Ge(32)", "As(33)", "Se(34)", "Br(35)", "Kr(36)", "Rb(37)", "Sr(38)", "Y(39)", "Zr(40)", "Nb(41)", "Mo(42)", "Tc(43)", "Ru(44)", "Rh(45)", "Pd(46)", "Ag(47)", "Cd(48)", "In(49)", "Sn(50)", "Sb(51)", "Te(52)", "I(53)", "Xe(54)", "Cs(55)", "Ba(56)", "La(57)", "Ce(58)", "Pr(59)", "Nd(60)", "Pm(61)", "Sm(62)", "Eu(63)", "Gd(64)", "Tb(65)", "Dy(66)", "Ho(67)", "Er(68)", "Tm(69)", "Yb(70)", "Lu(71)", "Hf(72)", "Ta(73)", "W(74)", "Re(75)", "Os(76)", "Ir(77)", "Pt(78)", "Au(79)", "Hg(80)", "Tl(81)", "Pb(82)", "Bi(83)", "Po(84)", "At(85)", "Rn(86)", "Fr(87)", "Ra(88)", "Ac(89)", "Th(90)", "Pa(91)", "U(92)", "Np(93)", "Pu(94)", "Am(95)", "Cm(96)", "Bk(97)", "Cf(98)", "Es(99)", "Fm(100)", "Md(101)", "No(102)", "Lr(103)", "Rf(104)", "Ha(105)", "Sg(106)", "Ns(107)", "Hs(108)", "Mt(109)", "Unn(110)", "Unu(111)"];
+
+         // Element Value Array
+         let elementValueArray = [];
+         for (let index = 0; index < 111; index++) {
+            elementValueArray[index] = 0;
+         }
+
+         let arrData = [];
+         
+         data.forEach((row, iNumber) => {
+            row.function_types.forEach(row => {
+                  functionTypeStr += row + ",";
+            });
+            functionTypeStr = functionTypeStr.slice(0, -1);
+            
+            row.notes_exist.forEach(row => {
+                  notesExistStr += row + ",";
+            });
+            notesExistStr = notesExistStr.slice(0, -1);
+
+            row.other_names.forEach(row => {
+                  otherNamesStr += row + ",";
+            });
+            otherNamesStr = otherNamesStr.slice(0, -1);
+
+            // atom element
+            row.versions[row.latest_version].elements.forEach(ele => {
+               elementValueArray[ele-1] = 1;
+            });
+
+            arrayItem = [
+               row.basename,
+               row.description,
+               row.display_name,
+               row.family,
+               functionTypeStr,
+               notesExistStr,
+               otherNamesStr,
+               row.relpath,
+               row.role,
+               row.latest_version,
+               row.versions[row.latest_version].file_relpath,
+               row.versions[row.latest_version].revdate
+            ]
+
+            for (let index = 0; index < elementKeyArray.length; index++) {
+               arrayItem.push(elementValueArray[index]);
+               
+            }
+
+            arrData.push(arrayItem);
+         
+            functionTypeStr = "";
+            notesExistStr = "";
+            otherNamesStr = "";
+            // atomValStr = "";
+            for (let index = 0; index < 111; index++) {
+               elementValueArray[index] = 0;
+            }
+         })
+
+         // table data
+         let realData = arrData;
+
+         // column data
+         let arrType = [
+            {'title': 'Name'},
+            {'title': 'Description'},
+            {'title': 'DisplayName'},
+            {'title': 'Family'},
+            {'title': 'FunctionType'},
+            {'title': 'NotesExist'},
+            {'title': 'OtherName'},
+            {'title': 'Relpath'},
+            {'title': 'Role'},
+            {'title': 'LatestVersion'},
+            {'title': 'LatestVersionPath'},
+            {'title': 'LatestVersionRevDate'}
+         ];
+
+         for(let i = 0; i < elementKeyArray.length  ; i++) {
+            arrType.push({
+               'title': elementKeyArray[i]
+            });
+         }
+
+         $('#example').DataTable({
+            "data": realData,
+            "columns": arrType,
+            "lengthMenu": [[ 10, 25, 50, 100, -1], [ 10, 25, 50, 100, "All"]],
+            "pageLength": -1
+         });
+      }
+   }
+});
+
+        
+    </script>
+    <!-- End import custom javascript library -->
+</body>
+</html>
